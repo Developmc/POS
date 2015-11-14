@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="front_color" format="color"/>
+    <attr name="back_color" format="color" />
+
+    <declare-styleable name="UpPullMenu">
+        <attr name="front_color"/>
+        <attr name="back_color" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="LeftMenu">
+        <attr name="content_color" format="color"/>
+        <attr name="menu_color" format="color"/>
+        <attr name="left_margin_distance" format="integer"/>
+        <attr name="left_scale" format="float"/>
+    </declare-styleable>
+
+</resources>

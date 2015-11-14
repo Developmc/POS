@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/space_distance"
+        android:layout_weight="1">
+
+        <GridView
+            android:id="@+id/gridViewLeft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="@dimen/margin_bottom"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/margin_bottom"
+            android:overScrollMode="never"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray_light_light" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/space_distance"
+        android:layout_weight="3">
+
+        <GridView
+            android:id="@+id/gridViewRight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="@dimen/margin_bottom"
+            android:numColumns="6"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/margin_bottom"
+            android:overScrollMode="never"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/gry_button_width"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/space_distance">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_sure_green_selector"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ico_tick" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/item_left_weight"
+    android:layout_height="@dimen/item_left_height"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@drawable/gray_gray_selector">
+
+    <!-- 需要将图片资源自定为src ，或在程序中setImageResource(res)
+    不能设置background为图片，这样不能达到圆形效果 -->
+    <!--
+    <com.example.multiable.pos.CustomView.RoundImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space_distance"
+        android:layout_marginBottom="@dimen/space_distance" />
+    -->
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        style="@style/text_style_white"
+        android:layout_marginBottom="@dimen/space_distance_grid_view"
+        android:text="New Member"/>
+</LinearLayout>

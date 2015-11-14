@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_circular_bead_gray"
+    android:paddingStart="@dimen/space_distance"
+    android:paddingEnd="@dimen/space_distance"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/space_distance"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_invoiceNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/invoice_no"
+            style="@style/text_style_white"/>
+        <TextView
+            android:id="@+id/tv_cardNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/card_no"
+            android:layout_marginTop="@dimen/space_distance"
+            style="@style/text_style_white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/bt_invoiceNo"
+            android:layout_marginBottom="@dimen/margin_bottom_top_panel"
+            android:imeOptions="flagNoExtractUi"
+            style="@style/editText_style_white"/>
+        <EditText
+            android:id="@+id/bt_cardNo"
+            style="@style/editText_style_white"
+            android:imeOptions="flagNoExtractUi"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_unpaidInvoicve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/unpaid_invoices"
+            style="@style/text_style_white"
+            android:layout_marginTop="@dimen/margin_bottom_top_panel"
+            android:layout_marginLeft="@dimen/margin_top"
+            android:layout_marginBottom="-5dp"/>
+        <CheckBox
+            android:id="@+id/cb_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/checkBox_style"
+            android:text="@string/points"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_marginBottom="@dimen/check_box_margin"
+            />
+        <CheckBox
+            android:id="@+id/cb_preOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/checkBox_style"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_marginTop="@dimen/check_box_margin"
+            android:text="@string/pre_order" />
+    </LinearLayout>
+
+
+</LinearLayout>

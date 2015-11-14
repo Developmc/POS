@@ -6,54 +6,86 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:background="@color/gray"
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="@dimen/space_distance"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="5"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:background="@color/red_backgroup"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:layout_marginBottom="@dimen/space_distance">
-
-            </LinearLayout>
-            <LinearLayout
-                android:background="@color/white_backgroup"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="5">
-
-            </LinearLayout>
-        </LinearLayout>
-        
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="2"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginLeft="@dimen/space_distance"
-            android:layout_marginStart="@dimen/space_distance">
-
-        </LinearLayout>
+        android:orientation="vertical">
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_bottom_bar"/>
     <LinearLayout
-        android:background="@color/blue_backgroup"
+        android:background="@color/blue_bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/bottom_bar_height"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id="@+id/bottomBar">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/staff_name"
+                android:paddingLeft="50dp"
+                android:paddingRight="10dp"
+                style="@style/text_style_white_bottom_bar"/>
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/tv_staffName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Sam Lo"
+                style="@style/text_style_white_bottom_bar"/>
+            <View
+                android:background="@color/gray_light"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/id"
+                style="@style/text_style_white_bottom_bar"/>
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="289141"
+                style="@style/text_style_white_bottom_bar"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/logout"
+                android:gravity="center_vertical"
+                style="@style/text_style_white_bottom_bar" />
+            <ImageView
+                android:padding="@dimen/manager_process_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ico_logout"/>
+        </LinearLayout>
 
     </LinearLayout>
+
 </LinearLayout>
 
 <!--

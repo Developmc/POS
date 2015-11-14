@@ -5,4 +5,72 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- text of white style -->
+    <style name="text_style_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <!-- text of white title style -->
+    <style name="text_style_white_title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <!-- text of bottom bar white style -->
+    <style name="text_style_white_bottom_bar">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_bottom_bar</item>
+    </style>
+
+    <!-- text of button white style -->
+    <style name="text_style_white_button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_button_blue</item>
+    </style>
+
+    <!-- button of white style-->
+    <style name="editText_style_white">
+        <item name="android:layout_width">@dimen/editText_width</item>
+        <item name="android:layout_height">@dimen/editText_height</item>
+        <item name="android:background">@drawable/shape_circular_bead_small</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--checkBox style-->
+    <style name="checkBox_style">
+        <item name="android:scaleX">1.0</item>
+        <item name="android:scaleY">1.0</item>
+        <item name="android:color">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:checkBoxPreferenceStyle">?android:checkboxStyle</item>
+    </style>
+
+    <!--new Member textView style-->
+    <style name="new_member_textview_style">
+        <item  name="android:layout_width">0dp</item>
+        <item  name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:background">@color/gray_light</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/space_distance</item>
+        <item name="android:paddingRight">@dimen/space_distance</item>
+
+    </style>
+
+    <!-- CustomProgressDialog -->
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
 </resources>
